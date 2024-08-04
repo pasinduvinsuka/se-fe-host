@@ -62,12 +62,11 @@ const HighlightsLayout = ({
                   <img
                     src={
                       page == 'kenya'
-                        ? '/svgs/kenya/mainpage/kenya-road-1.svg'
-                        : '/svgs/zanzibar/mainpage/zanzibar-road-1.svg'
+                        ? 'media/svgs/kenya/mainpage/kenya-road-1.svg'
+                        : 'media/svgs/zanzibar/mainpage/zanzibar-road-1.svg'
                     }
                     alt="Dotted Road"
                     className="w-full object-cover max-w-full lg:h-[600px] xl:h-[700px] 2xl:h-[800px] 3xl:h-[950px] hidden lg:block"
-                    // style={{ maxWidth: '100%', height: 'auto' }}
                   />
                 </div>
               )}
@@ -77,16 +76,11 @@ const HighlightsLayout = ({
                   <img
                     src={
                       page == 'kenya'
-                        ? '/svgs/kenya/mainpage/kenya-road-2.svg'
-                        : '/svgs/zanzibar/mainpage/zanzibar-road-2.svg'
+                        ? 'media/svgs/kenya/mainpage/kenya-road-2.svg'
+                        : 'media/svgs/zanzibar/mainpage/zanzibar-road-2.svg'
                     }
                     alt="Dotted Road"
                     className="w-full object-cover max-w-full lg:h-[600px] xl:h-[700px] 2xl:h-[800px] 3xl:h-[950px] hidden lg:block"
-                    // style={{
-                    //   maxWidth: '100%',
-                    //   height: 'auto',
-                    //   alignItems: 'left',
-                    // }}
                   />
                 </div>
               )}

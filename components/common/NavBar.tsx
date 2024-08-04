@@ -41,7 +41,7 @@ export default function NavBar() {
   const safariMenuRef = useRef<Menu>(null);
   const excursionsMenuRef = useRef<Menu>(null);
 
-  const [isSidePanelOpen, setSidePanelOpen] = useState(false);
+  const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
 
   const SafariMenuItems: MenuItem[] = [
     {
@@ -98,7 +98,7 @@ export default function NavBar() {
           <div className="px-6 text-xl font-semibold flex items-center gap-4">
             <Link href={'/home'}>
               <Image
-                src={'/safariExpertLogo.svg'}
+                src={'/media/svgs/common/safariExpertLogo.svg'}
                 width={150}
                 height={150}
                 sizes="small"
@@ -111,7 +111,7 @@ export default function NavBar() {
           <Button
             icon="pi pi-bars"
             className="text-white"
-            onClick={() => setSidePanelOpen(!isSidePanelOpen)}
+            onClick={() => setIsSidePanelOpen(!isSidePanelOpen)}
           />
         </div>
       </div>
@@ -127,7 +127,7 @@ export default function NavBar() {
                   ? 'text-primaryGreen font-bold'
                   : 'text-gray-800'
               }`}
-              onClick={() => setSidePanelOpen(false)}
+              onClick={() => setIsSidePanelOpen(false)}
             >
               Zanzibar
             </Link>
@@ -163,7 +163,7 @@ export default function NavBar() {
                   ? 'text-primaryGreen font-bold'
                   : 'text-gray-800'
               }`}
-              onClick={() => setSidePanelOpen(false)}
+              onClick={() => setIsSidePanelOpen(false)}
             >
               About Us
             </Link>
@@ -210,7 +210,7 @@ export default function NavBar() {
                   ? 'text-primaryGreen font-bold'
                   : 'text-gray-800'
               }`}
-              onClick={() => setSidePanelOpen(false)}
+              onClick={() => setIsSidePanelOpen(false)}
             >
               Contact
             </Link>
@@ -225,7 +225,7 @@ export default function NavBar() {
           <div className="px-6 text-xl font-semibold flex items-center gap-4">
             <Link href={'/home'}>
               <Image
-                src={'/safariExpertLogo.svg'}
+                src={'/media/svgs/common/safariExpertLogo.svg'}
                 width={150}
                 height={150}
                 sizes="small"

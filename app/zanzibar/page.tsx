@@ -41,7 +41,7 @@ export default function Page() {
 
   return (
     <div>
-      <HeroSection videoSrc="/videos/zanzibar.mp4" />
+      <HeroSection videoSrc="/media/videos/zanzibar.mp4" />
       <div className="flex flex-col items-center max-w-screen-3xl mx-auto">
         <div className="relative">
           {/* Background Container for IntroductionSection */}
@@ -58,7 +58,7 @@ export default function Page() {
           </div>
           <div className="relative z-10 pt-24 px-1 sm:px-10 lg:px-24 2xl:px-56">
             <BookNowSection
-              imageSrc="/images/zanzibar/booknow/booknow.png"
+              imageSrc="/media/images/zanzibar/booknow/booknow.png"
               page="zanzibar"
             />
           </div>
@@ -68,7 +68,7 @@ export default function Page() {
             className="absolute inset-0  z-0"
             style={{
               backgroundImage:
-                'url(/svgs/zanzibar/mainpage/zanzibar-svg-2.svg)', // Update path if needed
+                'url(/media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg)', // Update path if needed
               backgroundSize: '25% auto', // Adjust size as needed
               backgroundPosition: 'left top', // Adjusted position to move the image up
               backgroundRepeat: 'no-repeat',
@@ -93,7 +93,7 @@ export default function Page() {
         <div className="sm:px-10 lg:px-28 2xl:px-56">
           <RequestTripSection
             page="zanzibar"
-            imageSrc="/images/zanzibar/requestnow/zanzibarrequest.png"
+            imageSrc="/media/images/zanzibar/requestnow/zanzibarrequest.png"
           />
         </div>
       </div>

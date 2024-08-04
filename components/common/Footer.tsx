@@ -11,16 +11,12 @@ import { Controller, useForm } from 'react-hook-form';
 export default function Footer() {
   const {
     control,
-    formState: { errors },
-    setValue,
-    getValues,
-    reset,
-    handleSubmit,
+    formState: { errors }
   } = useForm();
   return (
     <div className="bg-[#1D564D] relative text-white pt-16 pb-8 h-[600] overflow-hidden">
       <Image
-        src="/footer.svg"
+        src="/media/svgs/common/footer.svg"
         alt="Footer Background"
         layout="fill"
         objectFit="cover "
@@ -80,9 +76,6 @@ export default function Footer() {
                 />
               )}
             />
-            {/* <button className="bg-[#f38218] p-2 rounded-r-md w-full sm:w-auto">
-              Subscribe
-            </button> */}
           </div>
           <p className="text-sm">
             By subscribing you agree to with our{' '}

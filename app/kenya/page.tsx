@@ -3,9 +3,9 @@ import React from 'react';
 import HeroSection from '../../components/common/HeroSection';
 import IntroductionSection from '../../components/common/Introduction';
 import BookNowSection from '../../components/common/BookNowSection';
-import SafariPackages from '../../components/kenyan/SafariPackages';
-import Highlights from '../../components/kenyan/Highlights';
-import Activities from '../../components/kenyan/Activities';
+import SafariPackages from '../../components/kenya/SafariPackages';
+import Highlights from '../../components/kenya/Highlights';
+import Activities from '../../components/kenya/Activities';
 import Stepper from '../../components/common/Stepper';
 import Footer from '../../components/common/Footer';
 import RequestTripSection from '@/components/common/RequestTrip';
@@ -42,7 +42,7 @@ export default function Page() {
 
   return (
     <div>
-      <HeroSection videoSrc="/videos/kenya.mp4" />
+      <HeroSection videoSrc="/media/videos/kenya.mp4" />
       <div className="flex flex-col items-center max-w-screen-3xl mx-auto">
         <div className="relative">
           {/* Background Container for IntroductionSection */}
@@ -58,7 +58,10 @@ export default function Page() {
             <IntroductionSection title={title} paragraphs={paragraphs} />
           </div>
           <div className="relative z-10 pt-24 px-1 sm:px-10 lg:px-24 2xl:px-56">
-            <BookNowSection imageSrc="/rino.jpeg" page="kenya" />
+            <BookNowSection
+              imageSrc="/media/images/kenya/booknow/booknow.jpg"
+              page="kenya"
+            />
           </div>
         </div>
         <div className="relative bg-kenya-svg-2 bg-cover bg-center py-8 sm:pt-24 w-full">
@@ -78,7 +81,7 @@ export default function Page() {
         <div
           className="relative bg-kenya-svg-3 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/svgs/kenya/mainpage/kenya-svg-3.svg)',
+            backgroundImage: 'url(/media/svgs/kenya/mainpage/kenya-svg-3.svg)',
             backgroundSize: 'cover',
             backgroundPosition: 'top 80% left center',
             height: 'auto',
@@ -97,7 +100,7 @@ export default function Page() {
             <div className="sm:px-10 lg:px-28 2xl:px-56">
               <RequestTripSection
                 page="kenya"
-                imageSrc="/images/zanzibar/requestnow/kenyarequest.jpg"
+                imageSrc="/media/images/kenya/requestnow/kenyarequest.jpg"
               />
             </div>
           </div>

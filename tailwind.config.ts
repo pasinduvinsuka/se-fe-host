@@ -68,13 +68,13 @@ const config: Config = {
 
     extend: {
       backgroundImage: {
-        'kenya-text-svg': "url('/svgs/kenya/mainpage/kenya-text.svg')",
-        'zanzibar-text-svg': "url('/svgs/zanzibar/mainpage/zanzibar-text.svg')",
-        'kenya-svg-1': "url('/svgs/kenya/mainpage/kenya-svg-1.svg')",
-        'kenya-svg-2': "url('/svgs/kenya/mainpage/kenya-svg-2.svg')",
-        'kenya-svg-3': "url('/svgs/kenya/mainpage/kenya-svg-3.svg')",
-        'zanzibar-svg-1': "url('/svgs/zanzibar/mainpage/zanzibar-svg-1.svg')",
-        'zanzibar-svg-2': "url('/svgs/zanzibar/mainpage/zanzibar-svg-2.svg')",
+        'kenya-text-svg': "url('/media/svgs/kenya/mainpage/kenya-text.svg')",
+        'zanzibar-text-svg': "url('/media/svgs/zanzibar/mainpage/zanzibar-text.svg')",
+        'kenya-svg-1': "url('/media/svgs/kenya/mainpage/kenya-svg-1.svg')",
+        'kenya-svg-2': "url('/media/svgs/kenya/mainpage/kenya-svg-2.svg')",
+        'kenya-svg-3': "url('/media/svgs/kenya/mainpage/kenya-svg-3.svg')",
+        'zanzibar-svg-1': "url('/media/svgs/zanzibar/mainpage/zanzibar-svg-1.svg')",
+        'zanzibar-svg-2': "url('/media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg')",
       },
     },
     mixBlendMode: {

@@ -2,11 +2,10 @@
 
 import React from 'react';
 import { FaCheck } from 'react-icons/fa';
-import { GiJeep } from 'react-icons/gi';
+import { GiJeep,GiSpeedBoat } from 'react-icons/gi';
 import { MdSupportAgent } from 'react-icons/md';
 import { BsEnvelopeCheck } from 'react-icons/bs';
 import { GrDocumentText } from 'react-icons/gr';
-import { GiSpeedBoat } from 'react-icons/gi';
 import { motion } from 'framer-motion';
 
 export default function Stepper({

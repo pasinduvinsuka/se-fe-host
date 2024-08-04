@@ -15,11 +15,7 @@ export default function BookNowSection({
 }: Readonly<{ imageSrc: string; page: 'kenya' | 'zanzibar' }>) {
   const {
     control,
-    formState: { errors },
-    setValue,
-    getValues,
-    reset,
-    handleSubmit,
+    formState: { errors }
   } = useForm();
 
   const calendarPt = {

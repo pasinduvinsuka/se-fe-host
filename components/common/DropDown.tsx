@@ -1,8 +1,6 @@
 'use client';
 import {
-  Dropdown,
-  DropdownChangeEvent,
-  DropdownFilterEvent,
+  Dropdown
 } from 'primereact/dropdown';
 import React from 'react';
 

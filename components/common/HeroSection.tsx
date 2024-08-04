@@ -1,4 +1,3 @@
-// components/HeroSection.tsx
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import NavBar from './NavBar';

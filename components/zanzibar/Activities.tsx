@@ -4,37 +4,37 @@ import PackageSection from '../common/PackageSection';
 const packageInfo = [
   {
     name: 'Snorkeling and Diving',
-    image: '/images/zanzibar/activities/diving.png',
+    image: '/media/images/zanzibar/activities/diving.png',
     price: '$640',
   },
   {
     name: 'Spice Plantation Tours',
-    image: '/images/zanzibar/activities/plantation.png',
+    image: '/media/images/zanzibar/activities/plantation.png',
     price: '$435',
   },
   {
     name: 'Dolphin Watching',
-    image: '/images/zanzibar/activities/dolphin.png',
+    image: '/media/images/zanzibar/activities/dolphin.png',
     price: '$55',
   },
   {
     name: 'Outdoor Evening',
-    image: '/activities/kenyan/outdoorevening.png',
+    image: '/media/images/zanzibar/activities/outdoorevening.png',
     price: '$1275',
   },
   {
     name: 'Luxury Retreat',
-    image: '/bird.png',
+    image: '/media/images/zanzibar/activities/bird.png',
     price: '$7890',
   },
   {
     name: 'Beachside Escape',
-    image: '/beach.png',
+    image: '/media/images/zanzibar/activities/beach.png',
     price: '2345$',
   },
   {
     name: 'Mountain Hiking',
-    image: '/hike.png',
+    image: '/media/images/zanzibar/activities/hike.png',
     price: '980$',
   },
 ];
