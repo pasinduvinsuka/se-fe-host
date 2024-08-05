@@ -1,12 +1,13 @@
+import { MouseEvent } from 'react';
+
 type PrimaryButtonProps = {
-  type?: 'button' | 'submit' | 'reset' | undefined;
+  type?: 'button' | 'submit' | 'reset';
   name?: string;
   onClick?: (event: MouseEvent<HTMLButtonElement>) => void;
   label: string;
-  icon?: any;
+  icon?: React.ReactNode; // Adjusted to React.ReactNode for better compatibility
   loading?: boolean;
   disabled?: boolean;
-  key?: string;
-  className?: string | undefined;
+  className?: string;
   labelBtn?: boolean;
 };

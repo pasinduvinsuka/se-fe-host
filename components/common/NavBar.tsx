@@ -10,9 +10,10 @@ import { Button } from 'primereact/button';
 import { motion } from 'framer-motion';
 import { PiPhoneCall } from "react-icons/pi";
 
+// Component to display contact information with animated phone icon
 const ContactInfo = () => {
   return (
-    <div className="flex items-center bg-transparent p-4 rounded-md ">
+    <div className="flex items-center bg-transparent p-4 rounded-md">
       <motion.div
         className="flex items-center justify-center bg-[#fbe5b6] rounded-full w-12 h-12"
         animate={{
@@ -24,7 +25,7 @@ const ContactInfo = () => {
           },
         }}
       >
-        <PiPhoneCall  className="text-2xl text-[#561217]" />
+        <PiPhoneCall className="text-2xl text-[#561217]" />
       </motion.div>
       <div className="ml-4">
         <p className="text-sm text-gray-100">Have Questions?</p>
@@ -34,15 +35,17 @@ const ContactInfo = () => {
   );
 };
 
+// Main NavBar component
 export default function NavBar() {
-  const pathname = usePathname();
-  const router = useRouter();
-  const reportMenu = useRef<Menu>(null);
-  const safariMenuRef = useRef<Menu>(null);
-  const excursionsMenuRef = useRef<Menu>(null);
+  const pathname = usePathname(); // Hook to get the current path
+  const router = useRouter(); // Hook for navigation
+  const reportMenu = useRef<Menu>(null); // Ref for Reports menu
+  const safariMenuRef = useRef<Menu>(null); // Ref for Safari menu
+  const excursionsMenuRef = useRef<Menu>(null); // Ref for Excursions menu
 
-  const [isSidePanelOpen, setIsSidePanelOpen] = useState(false);
+  const [isSidePanelOpen, setIsSidePanelOpen] = useState(false); // State for side panel visibility
 
+  // Menu items for Safari
   const SafariMenuItems: MenuItem[] = [
     {
       label: 'Safari Sub 1',
@@ -70,6 +73,7 @@ export default function NavBar() {
     },
   ];
 
+  // Menu items for Excursions
   const ExcursionsMenuItems: MenuItem[] = [
     {
       label: 'Excursion Sub 1',
@@ -93,6 +97,7 @@ export default function NavBar() {
 
   return (
     <>
+      {/* Mobile Navbar */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-transparent text-white shadow-sm px-10 md:hidden">
         <div className="flex flex-grow justify-between gap-8 items-center py-2">
           <div className="px-6 text-xl font-semibold flex items-center gap-4">
@@ -116,7 +121,7 @@ export default function NavBar() {
         </div>
       </div>
 
-      {/* Side Panel */}
+      {/* Side Panel for mobile view */}
       {isSidePanelOpen && (
         <div className="fixed top-0 left-0 h-full w-64 bg-white shadow-lg z-50 md:hidden">
           <div className="flex flex-col p-4">
@@ -219,7 +224,6 @@ export default function NavBar() {
       )}
 
       {/* Desktop Navbar */}
-
       <div className="fixed top-0 left-0 right-0 z-50 bg-transparent text-white shadow-sm px-10 hidden md:flex">
         <div className="flex flex-row justify-between gap-8 items-center py-2">
           <div className="px-6 text-xl font-semibold flex items-center gap-4">

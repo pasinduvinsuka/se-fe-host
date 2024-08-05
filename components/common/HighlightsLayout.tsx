@@ -23,27 +23,34 @@ const HighlightsLayout = ({
   headerDescription,
   page,
 }: HighlightsLayoutProps) => {
+  // Animation controls for framer-motion
   const controls = useAnimation();
+
+  // Intersection observer to trigger animations when in view
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.2 });
 
+  // Effect to start animation when in view
   React.useEffect(() => {
     if (inView) {
       controls.start('visible');
     }
   }, [controls, inView]);
+
   return (
     <div>
+      {/* Render the header element passed as a prop */}
       {header}
       <h6 className="text-center pt-5 md:px-10 lg:px-14 xl:px-44">
         {headerDescription}
       </h6>
       <div className="relative container">
+        {/* Iterate over sections to render each section */}
         {sections.map((section, index) => {
-          // Determine top position for the SVG
+          // Determine top position for the SVG based on section id
           const topPosition =
             section.id === 3 ? 'top-[-148px]' : 'top-[-160px]';
 
-          // Determine translation
+          // Determine translation class based on section id
           let translationClass = '-translate-x-40 sm:-translate-x-56'; // Default case
           if (section.id === 1) {
             translationClass = '-translate-x-1/4 sm:-translate-x-1/5 ';
@@ -70,6 +77,7 @@ const HighlightsLayout = ({
                   />
                 </div>
               )}
+
               {/* Render the road SVG between sections 2 and 3 */}
               {index === 1 && (
                 <div className="absolute inset-x-0 lg:top-[calc(100%-18rem)] xl:top-[calc(100%-20rem)] 2xl:top-[calc(100%-26rem)]  3xl:top-[calc(100%-30rem)] 3xl:-translate-x-72 z-10">
@@ -84,6 +92,8 @@ const HighlightsLayout = ({
                   />
                 </div>
               )}
+
+              {/* Image section */}
               <div
                 className={`w-full lg:w-1/2 ${
                   index % 2 === 1 ? 'lg:order-2 ' : ''
@@ -100,6 +110,8 @@ const HighlightsLayout = ({
                   style={{ width: 778, height: 560 }}
                 />
               </div>
+
+              {/* Description section */}
               <div className="relative w-full lg:w-[500px] p-8">
                 <div
                   className={`absolute inset-0 ${
@@ -108,11 +120,15 @@ const HighlightsLayout = ({
                       : 'bg-zanzibar-text-svg opacity-20'
                   }  bg-cover bg-center z-0`}
                 ></div>
+
+                {/* Animal SVG overlay */}
                 <img
                   src={section.svg}
                   alt="Animal"
                   className={`absolute ${topPosition} left-1/2 transform ${translationClass} z-[-2] w-52 h-52 object-contain opacity-[6.5%]`}
                 />
+                
+                {/* Section title and description */}
                 <div className="relative z-20">
                   <h2 className="text-md sm:text-3xl font-bold mb-4">
                     {section.title.toUpperCase()}

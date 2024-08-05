@@ -1,6 +1,7 @@
 import React from 'react';
 import PackageSection from '../common/PackageSection';
 
+// Define the packageInfo array with details for each package, including name, image, and price
 const packageInfo = [
   {
     name: 'Backpacker Camping',
@@ -39,12 +40,24 @@ const packageInfo = [
   },
 ];
 
-const header = <h4 className="text text-black font-bold text-lg sm:text-4xl ">
-{'safari packages'.toUpperCase()}
-</h4>
+// Define the header element with styling and text
+const header = (
+  <h4 className="text text-black font-bold text-lg sm:text-4xl">
+    {'safari packages'.toUpperCase()}
+  </h4>
+);
 
-const headerDescription= 'Malesuada erat convallis orci semper sapien. Nibh sit proin elit cursus pharetra duis. Dictumst tellus ullamcorper vestibulum donec proin ac justo.'
+// Define the header description for the section
+const headerDescription = 
+  'Malesuada erat convallis orci semper sapien. Nibh sit proin elit cursus pharetra duis. Dictumst tellus ullamcorper vestibulum donec proin ac justo.';
 
-export default function safariSection() {
-  return <PackageSection packageInfo={packageInfo} header={header} headerDescription={headerDescription} />;
+// Export the SafariSection component, passing packageInfo, header, and headerDescription to the PackageSection component
+export default function SafariSection() {
+  return (
+    <PackageSection
+      packageInfo={packageInfo}
+      header={header}
+      headerDescription={headerDescription}
+    />
+  );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import HighlightsLayout from '../common/HighlightsLayout';
 
+// Define the sections with details including title, image, SVG icon, and description
 const sections = [
   {
     id: 1,
@@ -36,16 +37,19 @@ const sections = [
   },
 ];
 
+// Define the header element with styling and text
 const Header = (
-  <div className=" text-md sm:text-4xl font-bold text-center">
+  <div className="text-md sm:text-4xl font-bold text-center">
     {'Must-See Highlights of Your'.toUpperCase()}
     <span className="text-orange-600"> {'Zanzibar Trip'.toUpperCase()}</span>
   </div>
 );
 
+// Define the header description for the section
 const headerDescription =
   "Witness the awe-inspiring movement of millions of wildebeest, zebras, and gazelles across the Maasai Mara plains. Experience nature's most spectacular event, where predator-prey interactions unfold before your eyes. This incredible phenomenon offers a front-row seat to one of the world's most breathtaking wildlife spectacles.";
 
+// Export the Highlights component, passing sections, header, and headerDescription to the HighlightsLayout component
 export default function Highlights() {
   return (
     <HighlightsLayout

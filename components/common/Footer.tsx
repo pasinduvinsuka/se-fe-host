@@ -1,4 +1,5 @@
 'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -8,20 +9,27 @@ import TextInput from './TextInput';
 import PrimaryButton from './PrimaryButton';
 import { Controller, useForm } from 'react-hook-form';
 
+// Footer component definition
 export default function Footer() {
+  // Initializing form control using react-hook-form
   const {
     control,
     formState: { errors }
   } = useForm();
+
   return (
     <div className="bg-[#1D564D] relative text-white pt-16 pb-8 h-[600] overflow-hidden">
+      {/* Background Image */}
       <Image
         src="/media/svgs/common/footer.svg"
         alt="Footer Background"
         layout="fill"
-        objectFit="cover "
+        objectFit="cover"
       />
-      <div className="  z-10 px-7  md:px-28 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8  items-center">
+
+      {/* Footer Content */}
+      <div className="z-10 px-7 md:px-28 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 items-center">
+        {/* First Column with links */}
         <div className="flex flex-col lg:items-center">
           <h6 className="font-bold mb-2">Column One</h6>
           <ul>
@@ -32,6 +40,8 @@ export default function Footer() {
             <li className="mb-1">Link Five</li>
           </ul>
         </div>
+
+        {/* Second Column with links */}
         <div className="flex flex-col lg:items-center">
           <h6 className="font-bold mb-2">Column Two</h6>
           <ul>
@@ -42,6 +52,8 @@ export default function Footer() {
             <li className="mb-1">Link Ten</li>
           </ul>
         </div>
+
+        {/* Third Column with links */}
         <div className="flex flex-col lg:items-center">
           <h6 className="font-bold mb-2">Column Three</h6>
           <ul>
@@ -52,12 +64,15 @@ export default function Footer() {
             <li className="mb-1">Link Fifteen</li>
           </ul>
         </div>
+
+        {/* Subscription Form */}
         <div className="col-span-1 md:col-span-2">
           <h6 className="font-bold mb-2">Subscribe</h6>
           <p className="mb-4">
             Join our newsletter to stay up to date on features and releases.
           </p>
           <div className="flex items-center mb-2 relative z-50">
+            {/* Controlled Input for Email Subscription */}
             <Controller
               name={'email'}
               control={control}
@@ -70,9 +85,13 @@ export default function Footer() {
                   onChange={field.onChange}
                   error={errors?.[field.name]?.message as React.ReactNode}
                   placeholder="Enter your email"
-                  labelBtn={<PrimaryButton label={'Subscribe'} labelBtn className='text-[#2c6e63] hover:scale-105 '
-                  onClick={()=>{}}
-                  />}
+                  labelBtn={
+                    <PrimaryButton
+                      label={'Subscribe'}
+                      className="text-[#2c6e63] hover:scale-105"
+                      onClick={() => {}}
+                    />
+                  }
                 />
               )}
             />
@@ -86,10 +105,14 @@ export default function Footer() {
           </p>
         </div>
       </div>
+
+      {/* Separator Line */}
       <div className="py-3 px-28">
         <hr />
       </div>
-      <div className="relative z-10 container mx-auto  px-7 md:px-28 flex flex-col md:flex-row justify-between items-center text-center mt-8">
+
+      {/* Footer Bottom Content */}
+      <div className="relative z-10 container mx-auto px-7 md:px-28 flex flex-col md:flex-row justify-between items-center text-center mt-8">
         <p className="mb-4 md:mb-0">
           © 2024 Safari Expert. All rights reserved.{' '}
           <Link href="#" className="underline">
@@ -104,6 +127,7 @@ export default function Footer() {
             Cookies Settings
           </Link>
         </p>
+        {/* Social Media Links */}
         <div className="flex space-x-4">
           <Link href="#">
             <FaFacebook size={24} />

@@ -1,6 +1,7 @@
 import React from 'react';
 import PackageSection from '../common/PackageSection';
 
+// Define the package information with details including name, image, and price
 const packageInfo = [
   {
     name: 'Snorkeling and Diving',
@@ -39,6 +40,7 @@ const packageInfo = [
   },
 ];
 
+// Define the header element with styling and text
 const Header = (
   <div className="text-md sm:text-4xl font-bold text-center">
     {'activities available in'.toUpperCase()}
@@ -46,8 +48,10 @@ const Header = (
   </div>
 );
 
+// Define the header description for the section
 const headerDescription = 'Activities are smaller trips that you can do while on a safari.';
 
+// Export the Activities component, passing packageInfo, header, and headerDescription to the PackageSection component
 export default function Activities() {
   return (
     <PackageSection

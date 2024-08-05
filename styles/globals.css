@@ -2,79 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+/* Custom styles using Tailwind utility classes */
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
-
-
+/* Custom dotted line */
 .custom-dotted-line {
-  border-top: 2px dashed #F97316; /* Adjust the color and thickness as needed */
+  @apply border-t-2 border-dashed border-orange-600; /* Tailwind utility for dashed border and color */
   width: 100%;
   height: 2px;
   transform: translateY(-50%);
 }
 
+/* Background image for Kenya SVG */
 .bg-kenya-svg-2 {
   background-image: url('/svgs/kenya/mainpage/kenya-svg-2.svg');
-  background-size: cover; /* or 'contain', depending on your needs */
+  background-size: cover; /* Adjust size as needed */
   background-position: center;
   background-repeat: no-repeat;
 }
 
-
+/* Masked image */
 .masked-image {
-  mask-image: url("/svgs/zanzibar/mainpage/black-splash.svg");
-  mask-size: cover;
-  mask-repeat: no-repeat;
   -webkit-mask-image: url("/svgs/zanzibar/mainpage/black-splash.svg");
   -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
+  mask-image: url("/svgs/zanzibar/mainpage/black-splash.svg");
+  mask-size: cover;
+  mask-repeat: no-repeat;
 }
 
 /* Adjust mask properties for different screen sizes */
 @media (max-width: 1024px) {
   .masked-image {
-    mask-size: contain;
     -webkit-mask-size: contain;
+    mask-size: contain;
   }
 }
 
 @media (max-width: 768px) {
   .masked-image {
-    mask-size: 200%; /* Adjust as needed */
     -webkit-mask-size: 200%; /* Adjust as needed */
+    mask-size: 200%; /* Adjust as needed */
   }
 }
 
 @media (max-width: 480px) {
   .masked-image {
-    mask-size: 300%; /* Adjust as needed */
     -webkit-mask-size: 300%; /* Adjust as needed */
+    mask-size: 300%; /* Adjust as needed */
   }
 }

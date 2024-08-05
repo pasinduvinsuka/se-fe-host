@@ -1,22 +1,25 @@
-'use  client';
+'use client'; // This directive indicates that the component uses client-side features
+
 import React from 'react';
-import HeroSection from '../../components/common/HeroSection';
-import IntroductionSection from '../../components/common/Introduction';
-import BookNowSection from '../../components/common/BookNowSection';
-import SafariPackages from '../../components/kenya/SafariPackages';
-import Highlights from '../../components/kenya/Highlights';
-import Activities from '../../components/kenya/Activities';
-import Stepper from '../../components/common/Stepper';
-import Footer from '../../components/common/Footer';
-import RequestTripSection from '@/components/common/RequestTrip';
+import HeroSection from '../../components/common/HeroSection'; // Importing HeroSection component
+import IntroductionSection from '../../components/common/Introduction'; // Importing IntroductionSection component
+import BookNowSection from '../../components/common/BookNowSection'; // Importing BookNowSection component
+import SafariPackages from '../../components/kenya/SafariPackages'; // Importing SafariPackages component
+import Highlights from '../../components/kenya/Highlights'; // Importing Highlights component
+import Activities from '../../components/kenya/Activities'; // Importing Activities component
+import Stepper from '../../components/common/Stepper'; // Importing Stepper component
+import Footer from '../../components/common/Footer'; // Importing Footer component
+import RequestTripSection from '@/components/common/RequestTrip'; // Importing RequestTripSection component
 
 export default function Page() {
+  // Title sections for the introduction
   const title = {
     part1: 'Kenya',
     part2: 'The Heartbeat of ',
     part3: "Africa's Wildlife",
   };
 
+  // Paragraphs for the IntroductionSection
   const paragraphs = [
     {
       id: 1,
@@ -42,8 +45,11 @@ export default function Page() {
 
   return (
     <div>
-      <HeroSection videoSrc="/media/videos/kenya.mp4" />
+      {/* Hero Section with video background */}
+      <HeroSection videoSrc="./media/videos/kenya.mp4" />
+
       <div className="flex flex-col items-center max-w-screen-3xl mx-auto">
+        {/* Container with relative positioning for background and content */}
         <div className="relative">
           {/* Background Container for IntroductionSection */}
           <div
@@ -57,6 +63,7 @@ export default function Page() {
           <div className="relative z-10 px-7 sm:px-10 lg:px-24 2xl:px-56 pt-28">
             <IntroductionSection title={title} paragraphs={paragraphs} />
           </div>
+          {/* Book Now Section */}
           <div className="relative z-10 pt-24 px-1 sm:px-10 lg:px-24 2xl:px-56">
             <BookNowSection
               imageSrc="/media/images/kenya/booknow/booknow.jpg"
@@ -64,6 +71,8 @@ export default function Page() {
             />
           </div>
         </div>
+
+        {/* Stepper and Safari Packages Section */}
         <div className="relative bg-kenya-svg-2 bg-cover bg-center py-8 sm:pt-24 w-full">
           <div className="relative z-10 2xl:px-20">
             <Stepper page="kenya" />
@@ -73,11 +82,12 @@ export default function Page() {
           </div>
         </div>
 
+        {/* Highlights Section */}
         <div className="px-7 sm:px-16 lg:px-24 2xl:px-32 pt-8 sm:pt-20">
           <Highlights />
         </div>
 
-        {/* Common Background Container */}
+        {/* Activities and Request Trip Section */}
         <div
           className="relative bg-kenya-svg-3 bg-cover bg-center"
           style={{
@@ -91,7 +101,7 @@ export default function Page() {
             <Activities />
           </div>
           <div
-            className="  pt-10 pb-16"
+            className="pt-10 pb-16"
             style={{
               backgroundPosition: 'bottom center',
               backgroundSize: 'cover',
@@ -106,6 +116,8 @@ export default function Page() {
           </div>
         </div>
       </div>
+
+      {/* Footer Section */}
       <Footer />
     </div>
   );

@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
 import NavBar from './NavBar';
 import {
@@ -14,9 +15,11 @@ import { GrGoogle } from 'react-icons/gr';
 import { IoMdArrowDropdown } from 'react-icons/io';
 import { motion } from 'framer-motion';
 
+// Header component definition
 export const Header = () => {
   return (
     <div className="bg-green-700 text-white py-2 flex justify-between items-center px-4">
+      {/* Contact and Timing Information */}
       <div className="flex items-center space-x-4">
         <div className="flex items-center space-x-1">
           <FaEnvelope />
@@ -36,6 +39,8 @@ export const Header = () => {
           <FaStar />
         </div>
       </div>
+
+      {/* Social Media Links and Language Selector */}
       <div className="flex items-center space-x-4">
         <span>Follow Us:</span>
         <FaLinkedin />
@@ -52,6 +57,7 @@ export const Header = () => {
   );
 };
 
+// Variants for motion elements in FeatureItem component
 const featureItemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: (i: number) => ({
@@ -62,7 +68,6 @@ const featureItemVariants = {
       duration: 0.3,
     },
   }),
-
   hover: {
     scale: 1.05,
     transition: {
@@ -72,6 +77,7 @@ const featureItemVariants = {
   },
 };
 
+// FeatureItem component definition
 const FeatureItem = ({
   number,
   title,
@@ -98,6 +104,7 @@ const FeatureItem = ({
   </motion.div>
 );
 
+// FeaturesSection component definition
 const FeaturesSection = () => (
   <div className="bg-transparent py-8">
     <div className="container mx-auto flex flex-wrap justify-center gap-8">
@@ -122,10 +129,12 @@ const FeaturesSection = () => (
   </div>
 );
 
+// HeroSection component definition
 const HeroSection = ({ videoSrc }: { videoSrc: string }) => {
   const [isHeroInView, setIsHeroInView] = useState(true);
   const heroRef = useRef<HTMLDivElement>(null);
 
+  // Intersection Observer to check if HeroSection is in view
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -135,7 +144,7 @@ const HeroSection = ({ videoSrc }: { videoSrc: string }) => {
         root: null,
         rootMargin: '0px',
         threshold: 0.1,
-      },
+      }
     );
 
     if (heroRef.current) {
@@ -154,6 +163,7 @@ const HeroSection = ({ videoSrc }: { videoSrc: string }) => {
       <div className="relative w-full h-screen overflow-hidden">
         {isHeroInView && <NavBar />}
         <div ref={heroRef}>
+          {/* Background Video */}
           <video
             className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2 z-0"
             autoPlay
@@ -164,8 +174,10 @@ const HeroSection = ({ videoSrc }: { videoSrc: string }) => {
             <source src={videoSrc} type="video/mp4" />
             Your browser does not support the video tag.
           </video>
+
+          {/* Overlay with FeaturesSection */}
           <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-end items-center bg-black bg-opacity-50 text-white text-center p-4">
-            <FeaturesSection /> {/* Add FeaturesSection here */}
+            <FeaturesSection />
           </div>
         </div>
       </div>
