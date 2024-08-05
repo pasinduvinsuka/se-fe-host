@@ -229,7 +229,7 @@ export default function NavBar() {
           <div className="px-6 text-xl font-semibold flex items-center gap-4">
             <Link href={'/home'}>
               <Image
-                src={'/public/media/svgs/common/safariExpertLogo.svg'}
+                src={'./media/svgs/common/safariExpertLogo.svg'}
                 width={150}
                 height={150}
                 sizes="small"
