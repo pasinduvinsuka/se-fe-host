@@ -78,7 +78,7 @@ export default function Page() {
             className="absolute inset-0 z-0"
             style={{
               backgroundImage:
-                'url(./media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg)', // Background image for the section
+                'url(/public/media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg)', // Background image for the section
               backgroundSize: '25% auto', // Adjust size as needed
               backgroundPosition: 'left top', // Adjusted position to move the image up
               backgroundRepeat: 'no-repeat',

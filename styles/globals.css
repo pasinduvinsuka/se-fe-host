@@ -14,40 +14,40 @@
 
 /* Background image for Kenya SVG */
 .bg-kenya-svg-2 {
-  background-image: url('/svgs/kenya/mainpage/kenya-svg-2.svg');
+  background-image: url('/public/media/svgs/kenya/mainpage/kenya-svg-2.svg');
   background-size: cover; /* Adjust size as needed */
   background-position: center;
   background-repeat: no-repeat;
 }
 
 /* Masked image */
-.masked-image {
-  -webkit-mask-image: url("/svgs/zanzibar/mainpage/black-splash.svg");
+/* .masked-image {
+  -webkit-mask-image: url("./media/svgs/zanzibar/mainpage/black-splash.svg");
   -webkit-mask-size: cover;
   -webkit-mask-repeat: no-repeat;
-  mask-image: url("/svgs/zanzibar/mainpage/black-splash.svg");
+  mask-image: url("./media/svgs/zanzibar/mainpage/black-splash.svg");
   mask-size: cover;
   mask-repeat: no-repeat;
-}
+} */
 
 /* Adjust mask properties for different screen sizes */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .masked-image {
     -webkit-mask-size: contain;
     mask-size: contain;
   }
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .masked-image {
-    -webkit-mask-size: 200%; /* Adjust as needed */
-    mask-size: 200%; /* Adjust as needed */
+    -webkit-mask-size: 200%; 
+    mask-size: 200%; 
   }
 }
 
 @media (max-width: 480px) {
   .masked-image {
-    -webkit-mask-size: 300%; /* Adjust as needed */
-    mask-size: 300%; /* Adjust as needed */
+    -webkit-mask-size: 300%; 
+    mask-size: 300%; 
   }
-}
+} */

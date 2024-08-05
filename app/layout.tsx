@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Rubik } from 'next/font/google';
-import "../styles/globals.css"; // Import global styles
 import "primereact/resources/themes/saga-orange/theme.css"; // Import PrimeReact theme styles
+import "../styles/globals.css"; // Import global styles
 
 // Configure the Inter font with Latin subset
 const inter = Inter({ subsets: ['latin'] });

@@ -91,7 +91,8 @@ export default function Page() {
         <div
           className="relative bg-kenya-svg-3 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(./media/svgs/kenya/mainpage/kenya-svg-3.svg)',
+            backgroundImage:
+              'url(/public/media/svgs/kenya/mainpage/kenya-svg-3.svg)',
             backgroundSize: 'cover',
             backgroundPosition: 'top 80% left center',
             height: 'auto',

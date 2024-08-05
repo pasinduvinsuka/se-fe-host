@@ -21,7 +21,7 @@ export default function Footer() {
     <div className="bg-[#1D564D] relative text-white pt-16 pb-8 h-[600] overflow-hidden">
       {/* Background Image */}
       <Image
-        src="./media/svgs/common/footer.svg"
+        src="/public/media/svgs/common/footer.svg"
         alt="Footer Background"
         layout="fill"
         objectFit="cover"
