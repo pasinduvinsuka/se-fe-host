@@ -7,7 +7,7 @@ const sections = [
     id: 1,
     title: 'Stone Town',
     image: './media/images/zanzibar/highlights/stonetown.png',
-    svg: '/public/zanzibar/stonetown.svg',
+    svg: './media/svgs/zanzibar/stonetown.svg',
     description:
       "Explore the historic Stone Town, a UNESCO World Heritage site. Wander through narrow streets lined with ancient buildings, bustling markets, and vibrant bazaars. Discover the rich history and culture of Zanzibar as you visit the Sultan's Palace, House of Wonders, and the Old Fort.",
   },
@@ -15,7 +15,7 @@ const sections = [
     id: 2,
     title: 'Pristine Beaches',
     image: './media/images/zanzibar/highlights/beaches.png',
-    svg: '/public/media/svgs/zanzibar/beaches.svg',
+    svg: './media/svgs/zanzibar/beaches.svg',
     description:
       "Relax on Zanzibar's world-renowned beaches, where white sands meet turquoise waters. Enjoy sunbathing, swimming, and a variety of water sports. Visit popular beaches like Nungwi, Kendwa, and Paje for a perfect blend of relaxation and adventure.",
   },
@@ -23,7 +23,7 @@ const sections = [
     id: 3,
     title: 'Spice Plantations',
     image: './media/images/zanzibar/highlights/spiceplantations.png',
-    svg: '/public/media/svgs/zanzibar/plantations.svg',
+    svg: './media/svgs/zanzibar/plantations.svg',
     description:
       'Tour the famous spice plantations and learn why Zanzibar is known as the "Spice Island." Discover the origins of spices like cloves, nutmeg, and cinnamon, and experience their captivating aromas. Participate in spice tours and enjoy traditional Swahili cuisine prepared with these spices.',
   },
@@ -31,7 +31,7 @@ const sections = [
     id: 4,
     title: 'Coral Reefs and Marine Life',
     image: './media/images/zanzibar/highlights/marinelife.png',
-    svg: '/public/zanzibar/marinelife.svg',
+    svg: './media/svgs/zanzibar/marinelife.svg',
     description:
       "Snorkel and dive in the crystal-clear waters of Zanzibar's coral reefs. Explore the vibrant marine life, including colorful fish, sea turtles, and dolphins. Visit the Mnemba Atoll and Chumbe Island for some of the best underwater experiences.",
   },
