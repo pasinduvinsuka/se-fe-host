@@ -68,19 +68,19 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'kenya-text-svg':
-          "url('/public/media/svgs/kenya/mainpage/kenya-text.svg')",
+          "url('./media/svgs/kenya/mainpage/kenya-text.svg')",
         'zanzibar-text-svg':
-          "url('/public/media/svgs/zanzibar/mainpage/zanzibar-text.svg')",
+          "url('./media/svgs/zanzibar/mainpage/zanzibar-text.svg')",
         'kenya-svg-1':
-          "url('/public/media/svgs/kenya/mainpage/kenya-svg-1.svg')",
+          "url('./media/svgs/kenya/mainpage/kenya-svg-1.svg')",
         'kenya-svg-2':
-          "url('/public/media/svgs/kenya/mainpage/kenya-svg-2.svg')",
+          "url('./media/svgs/kenya/mainpage/kenya-svg-2.svg')",
         'kenya-svg-3':
-          "url('/public/media/svgs/kenya/mainpage/kenya-svg-3.svg')",
+          "url('./media/svgs/kenya/mainpage/kenya-svg-3.svg')",
         'zanzibar-svg-1':
-          "url('/public/media/svgs/zanzibar/mainpage/zanzibar-svg-1.svg')",
+          "url('./media/svgs/zanzibar/mainpage/zanzibar-svg-1.svg')",
         'zanzibar-svg-2':
-          "url('/public/media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg')",
+          "url('./media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg')",
       },
     },
     mixBlendMode: {
