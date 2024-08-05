@@ -66,7 +66,7 @@ export default function Page() {
           {/* Book Now Section */}
           <div className="relative z-10 pt-24 px-1 sm:px-10 lg:px-24 2xl:px-56">
             <BookNowSection
-              imageSrc="/media/images/kenya/booknow/booknow.jpg"
+              imageSrc="./media/images/kenya/booknow/booknow.jpg"
               page="kenya"
             />
           </div>
@@ -91,7 +91,7 @@ export default function Page() {
         <div
           className="relative bg-kenya-svg-3 bg-cover bg-center"
           style={{
-            backgroundImage: 'url(/media/svgs/kenya/mainpage/kenya-svg-3.svg)',
+            backgroundImage: 'url(./media/svgs/kenya/mainpage/kenya-svg-3.svg)',
             backgroundSize: 'cover',
             backgroundPosition: 'top 80% left center',
             height: 'auto',
@@ -110,7 +110,7 @@ export default function Page() {
             <div className="sm:px-10 lg:px-28 2xl:px-56">
               <RequestTripSection
                 page="kenya"
-                imageSrc="/media/images/kenya/requestnow/kenyarequest.jpg"
+                imageSrc="./media/images/kenya/requestnow/kenyarequest.jpg"
               />
             </div>
           </div>

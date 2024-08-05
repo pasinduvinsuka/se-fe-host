@@ -1,5 +1,4 @@
 'use client';
-import { DropDownProps } from '@/typings/dropdown';
 import {
   Dropdown
 } from 'primereact/dropdown';

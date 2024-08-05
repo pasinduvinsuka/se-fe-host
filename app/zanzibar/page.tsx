@@ -66,7 +66,7 @@ export default function Page() {
           {/* Book Now Section */}
           <div className="relative z-10 pt-24 px-1 sm:px-10 lg:px-24 2xl:px-56">
             <BookNowSection
-              imageSrc="/media/images/zanzibar/booknow/booknow.png"
+              imageSrc="./media/images/zanzibar/booknow/booknow.png"
               page="zanzibar"
             />
           </div>
@@ -78,7 +78,7 @@ export default function Page() {
             className="absolute inset-0 z-0"
             style={{
               backgroundImage:
-                'url(/media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg)', // Background image for the section
+                'url(./media/svgs/zanzibar/mainpage/zanzibar-svg-2.svg)', // Background image for the section
               backgroundSize: '25% auto', // Adjust size as needed
               backgroundPosition: 'left top', // Adjusted position to move the image up
               backgroundRepeat: 'no-repeat',
@@ -107,7 +107,7 @@ export default function Page() {
         <div className="sm:px-10 lg:px-28 2xl:px-56">
           <RequestTripSection
             page="zanzibar"
-            imageSrc="/media/images/zanzibar/requestnow/zanzibarrequest.png"
+            imageSrc="./media/images/zanzibar/requestnow/zanzibarrequest.png"
           />
         </div>
       </div>

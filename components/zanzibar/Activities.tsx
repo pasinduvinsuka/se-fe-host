@@ -5,37 +5,37 @@ import PackageSection from '../common/PackageSection';
 const packageInfo = [
   {
     name: 'Snorkeling and Diving',
-    image: '/media/images/zanzibar/activities/diving.png',
+    image: './media/images/zanzibar/activities/diving.png',
     price: '$640',
   },
   {
     name: 'Spice Plantation Tours',
-    image: '/media/images/zanzibar/activities/plantation.png',
+    image: './media/images/zanzibar/activities/plantation.png',
     price: '$435',
   },
   {
     name: 'Dolphin Watching',
-    image: '/media/images/zanzibar/activities/dolphin.png',
+    image: './media/images/zanzibar/activities/dolphin.png',
     price: '$55',
   },
   {
     name: 'Outdoor Evening',
-    image: '/media/images/zanzibar/activities/outdoorevening.png',
+    image: './media/images/zanzibar/activities/outdoorevening.png',
     price: '$1275',
   },
   {
     name: 'Luxury Retreat',
-    image: '/media/images/zanzibar/activities/bird.png',
+    image: './media/images/zanzibar/activities/bird.png',
     price: '$7890',
   },
   {
     name: 'Beachside Escape',
-    image: '/media/images/zanzibar/activities/beach.png',
+    image: './media/images/zanzibar/activities/beach.png',
     price: '2345$',
   },
   {
     name: 'Mountain Hiking',
-    image: '/media/images/zanzibar/activities/hike.png',
+    image: './media/images/zanzibar/activities/hike.png',
     price: '980$',
   },
 ];

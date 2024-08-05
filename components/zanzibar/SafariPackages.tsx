@@ -5,37 +5,37 @@ import PackageSection from '../common/PackageSection';
 const packageInfo = [
   {
     name: 'Backpacker Camping',
-    image: '/media/images/zanzibar/packages/elephant.jpg',
+    image: './media/images/zanzibar/packages/elephant.jpg',
     price: '$3435',
   },
   {
     name: 'Standard',
-    image: '/media/images/zanzibar/packages/rino.jpeg',
+    image: './media/images/zanzibar/packages/rino.jpeg',
     price: '$435',
   },
   {
     name: 'Family Friendly',
-    image: '/media/images/zanzibar/packages/lion.jpg',
+    image: './media/images/zanzibar/packages/lion.jpg',
     price: '$55',
   },
   {
     name: 'Safari Adventure',
-    image: '/media/images/zanzibar/packages/ostrich.jpg',
+    image: './media/images/zanzibar/packages/ostrich.jpg',
     price: '$1275',
   },
   {
     name: 'Luxury Retreat',
-    image: '/media/images/zanzibar/packages/bird.png',
+    image: './media/images/zanzibar/packages/bird.png',
     price: '$7890',
   },
   {
     name: 'Beachside Escape',
-    image: '/media/images/zanzibar/packages/beach.png',
+    image: './media/images/zanzibar/packages/beach.png',
     price: '2345$',
   },
   {
     name: 'Mountain Hiking',
-    image: '/media/images/zanzibar/packages/hike.png',
+    image: './media/images/zanzibar/packages/hike.png',
     price: '980$',
   },
 ];
